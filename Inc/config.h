@@ -141,12 +141,12 @@
 
 #define OPEN_MODE       0               // [-] OPEN mode
 #define VLT_MODE        1               // [-] VOLTAGE mode
-#define SPD_MODE        2               // [-] SPEED mode
-#define TRQ_MODE        3               // [-] TORQUE mode
+#define SPD_MODE        0               // [-] SPEED mode
+#define TRQ_MODE        0               // [-] TORQUE mode
 
 // Enable/Disable Motor
-#define MOTOR_LEFT_ENA                  // [-] Enable LEFT motor.  Comment-out if this motor is not needed to be operational
-#define MOTOR_RIGHT_ENA                 // [-] Enable RIGHT motor. Comment-out if this motor is not needed to be operational
+//#define MOTOR_LEFT_ENA                  // [-] Enable LEFT motor.  Comment-out if this motor is not needed to be operational
+//#define MOTOR_RIGHT_ENA                 // [-] Enable RIGHT motor. Comment-out if this motor is not needed to be operational
 
 // Control selections
 #define CTRL_TYP_SEL    FOC_CTRL        // [-] Control type selection: COM_CTRL, SIN_CTRL, FOC_CTRL (default)
