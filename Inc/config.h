@@ -139,7 +139,7 @@
 
 #define OPEN_MODE       0               // [-] OPEN mode
 #define VLT_MODE        1               // [-] VOLTAGE mode
-#define SPD_MODE        3               // [-] SPEED mode
+#define SPD_MODE        2               // [-] SPEED mode
 #define TRQ_MODE        3               // [-] TORQUE mode
 
 // Enable/Disable Motor
