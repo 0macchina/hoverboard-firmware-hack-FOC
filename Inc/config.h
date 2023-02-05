@@ -152,9 +152,9 @@
 #define DIAG_ENA        1               // [-] Motor Diagnostics enable flag: 0 = Disabled, 1 = Enabled (default)
 
 // Limitation settings
-#define I_MOT_MAX       5              // [A] Maximum single motor current limit
+#define I_MOT_MAX       15              // [A] Maximum single motor current limit
 #define I_DC_MAX        17              // [A] Maximum stage2 DC Link current limit for Commutation and Sinusoidal types (This is the final current protection. Above this value, current chopping is applied. To avoid this make sure that I_DC_MAX = I_MOT_MAX + 2A)
-#define N_MOT_MAX       1000            // [rpm] Maximum motor speed limit
+#define N_MOT_MAX       250            // [rpm] Maximum motor speed limit
 
 // Field Weakening / Phase Advance
 #define FIELD_WEAK_ENA  0               // [-] Field Weakening / Phase Advance enable flag: 0 = Disabled (default), 1 = Enabled
@@ -354,6 +354,9 @@
   #define PRI_INPUT1              2, -1024, 0, 1024, 0     // TYPE, MIN, MID, MAX, DEADBAND. See INPUT FORMAT section
   #define PRI_INPUT2              2, -1024, 0, 1024, 0     // TYPE, MIN, MID, MAX, DEADBAND. See INPUT FORMAT section
   #ifdef DUAL_INPUTS
+
+// cambio FLASH WRITE KEY
+
    // #define FLASH_WRITE_KEY       0x1103  // Flash memory writing key. Change this key to ignore the input calibrations from the flash memory and use the ones in config.h
     // #define SIDEBOARD_SERIAL_USART2 1
     #define CONTROL_SERIAL_USART2 1       // left sensor board cable, disable if ADC or PPM is used! For Arduino control check the hoverSerial.ino
@@ -361,7 +364,7 @@
     #define AUX_INPUT1            3, -1000, 0, 1000, 0     // TYPE, MIN, MID, MAX, DEADBAND. See INPUT FORMAT section
     #define AUX_INPUT2            3, -1000, 0, 1000, 0     // TYPE, MIN, MID, MAX, DEADBAND. See INPUT FORMAT section
   #else
-    #define FLASH_WRITE_KEY       0x1003  // Flash memory writing key. Change this key to ignore the input calibrations from the flash memory and use the ones in config.h
+    //#define FLASH_WRITE_KEY       0x1003  // Flash memory writing key. Change this key to ignore the input calibrations from the flash memory and use the ones in config.h
     #define DEBUG_SERIAL_USART2           // left sensor cable debug
   #endif
 
