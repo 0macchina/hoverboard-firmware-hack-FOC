@@ -12,7 +12,7 @@
 #if !defined(PLATFORMIO)
   //#define VARIANT_ADC         // Variant for control via ADC input
   //#define VARIANT_USART       // Variant for Serial control via USART3 input
-  //#define VARIANT_NUNCHUK     // Variant for Nunchuk controlled vehicle build
+  #define VARIANT_NUNCHUK     // Variant for Nunchuk controlled vehicle build
   //#define VARIANT_PPM         // Variant for RC-Remote with PPM-Sum Signal
   //#define VARIANT_PWM         // Variant for RC-Remote with PWM Signal
   //#define VARIANT_IBUS        // Variant for RC-Remotes with FLYSKY IBUS
@@ -560,7 +560,7 @@
 // ############################ VARIANT_HOVERBOARD SETTINGS ############################
 // Communication:         [DONE]
 // Balancing controller:  [TODO]
-#ifdef VARIANT_HOVERBOARD
+#ifdef VARIANT_HOVERBOARD 
   #define FLASH_WRITE_KEY     0x1008          // Flash memory writing key. Change this key to ignore the input calibrations from the flash memory and use the ones in config.h
   #define SIDEBOARD_SERIAL_USART2 1           // left sensor board cable. Number indicates priority for dual-input. Disable if ADC or PPM is used! 
   #define FEEDBACK_SERIAL_USART2
