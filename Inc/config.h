@@ -141,8 +141,8 @@
 
 #define OPEN_MODE       0               // [-] OPEN mode
 #define VLT_MODE        1               // [-] VOLTAGE mode
-#define SPD_MODE        0               // [-] SPEED mode
-#define TRQ_MODE        0               // [-] TORQUE mode
+#define SPD_MODE        2               // [-] SPEED mode
+#define TRQ_MODE        3               // [-] TORQUE mode
 
 // Enable/Disable Motor
 #define MOTOR_LEFT_ENA                  // [-] Enable LEFT motor.  Comment-out if this motor is not needed to be operational
